@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Mobile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+    background-color: #F7F7F7;
+    margin: 0px;
+}
+.head{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+   
+}
+.heading{
+    color: black;
+    font: normal normal bold 45px/55px Inter;
+    font-size: 35px;
+    position: relative;
+    width: 1000px;
+    top: 10px;
+    left: 120px;
+    margin: 0px;   
+}
+.sign{
+    font-size: 35px;
+    color: #00A5EC;
+    position: absolute;
+    left: 53%;
+    top: 100px;
+    cursor: pointer;
+}
+.sign:hover{
+    color: black;
+}
+.signh{
+    font-size: 35px;
+    color: #000000;
+    position: absolute;
+    left: 28%;
+    top: 100px;
+    cursor: pointer;
+}
+.signh:hover{
+    color: #00A5EC;
+}
+.grid-contain{
+    display: block;  
+}
+.grid-item-1{
+    background-color: white;
+    box-shadow: 10px 10px 10px  #858484;
+    position: absolute;
+    top: 170px;
+    left: 27%;
+    height: 40%;
+    width: 40%;
+    background-color: white;
+    border: 1px solid  #e6e3e3; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+.inside{
+    padding: 20px;
+    font-size: 23px;
+}
+input[type=checkbox]{
+    accent-color: rgb(191, 190, 190);
+  }
+@media screen and (max-width: 900px), 
+       screen and (max-height: 400px){
+    body{
+    background-color: #F7F7F7;
+    margin: 0px;
+}
+.head{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+   
+}
+.heading{
+    color: black;
+    font: normal normal bold 45px/55px Inter;
+    font-size: 35px;
+    position: relative;
+    width: 1000px;
+    top: 10px;
+    left: 120px;
+    margin: 0px; 
+}
+.sign{
+    font-size: 35px;
+    color: #00A5EC;
+    position: absolute;
+    left: 55%;
+    top: 100px;
+    cursor: pointer;
+}
+.sign:hover{
+    color: black;
+}
+.signh{
+    font-size: 35px;
+    color: #000000;
+    position: absolute;
+    left: 28%;
+    top: 100px;
+    cursor: pointer;
+}
+.signh:hover{
+    color: #00A5EC;
+}
+.grid-contain{
+    display: block;  
+}
+.grid-item-1{
+    background-color: white;
+    box-shadow: 10px 10px 10px  #858484;
+    position: absolute;
+    top: 170px;
+    left: 27%;
+    height: 50%;
+    width: 45%;
+    background-color: white;
+    border: 1px solid  #e6e3e3; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+.inside{
+    padding: 20px;
+    font-size: 23px;
+}
+input[type=checkbox]{
+    accent-color: rgb(191, 190, 190);
+  }
+}
+@media screen and (max-width: 500px), 
+       screen and (max-height: 400px){
+        body{
+    background-color: #F7F7F7;
+    margin: 0px;
+}
+.head{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+   
+}
+.heading{
+    color: black;
+    font: normal normal bold 45px/55px Inter;
+    font-size: 35px;
+    position: relative;
+    width: 50%;
+    top: 10px;
+    left: 60px;
+    margin: 0px; 
+}
+.sign{
+    font-size: 45px;
+    color: #00A5EC;
+    position: absolute;
+    left: 48%;
+    top: 100px;
+    cursor: pointer;
+}
+.sign:hover{
+    color: black;
+}
+.signh{
+    font-size: 35px;
+    color: #000000;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    cursor: pointer;
+}
+.signh:hover{
+    color: #00A5EC;
+}
+.grid-contain{
+    display: block;  
+}
+.grid-item-1{
+    background-color: white;
+    box-shadow: 10px 10px 10px  #858484;
+    position: absolute;
+    top: 190px;
+    left: 5%;
+    height: 50%;
+    width: 90%;
+    background-color: white;
+    border: 1px solid  #e6e3e3; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+.inside{
+    padding: 20px;
+    font-size: 23px;
+}
+input[type=checkbox]{
+    accent-color: rgb(191, 190, 190);
+  }
+  .can{
+    display: none;
+  }
+}
+</style>
+<body>
+    
+    <div class="head">
+        <p class="heading">Tasks <span style="color: #00A5EC">List</span></p>
+    </div>
+
+   <i class="fa-solid fa-circle-plus sign"><span style="color:rgb(0, 0, 0); font-size: 20px; font-family: normal; position: relative; bottom:50px; left:45px; letter-spacing: 1px;"><p class="can">Add New Task</p></span></i>
+    
+    <a href="./index.html"><i class="fa-solid fa-circle-left signh"><span style="color:rgb(0, 0, 0); font-size: 20px; font-family: normal; position: relative; bottom:8px; left:8px; letter-spacing: 1px;">Back</span></i></a>
+
+    <div class="grid-contain">
+        <div class=" grid-item-1">
+            <center>
+            <h3><span style="color:#00A5EC; padding: 30px;  font-size: 23px; ">Trip to Paris</span></h3>
+            </center>
+            <hr>
+    
+            <div class="inside">
+               <input type="checkbox" checked>
+               <span style="color:#b3b2b2; text-decoration:line-through;" >Visit Church</span><br><br> </label> 
+               <input type="checkbox"/> Shopping
+            </div>
+    </div>
+
+</body>
+</html>
